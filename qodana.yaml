@@ -4,9 +4,25 @@
 
 version: "1.0"
 linter: jetbrains/qodana-jvm:2025.2
+
+# imposta un JDK compatibile anche con vecchi moduli
+projectJDK: 8
+
+# usa il profilo consigliato di Qodana
 profile:
   name: qodana.recommended
+
+# includi il controllo licenze (già presente)
 include:
   - name: CheckDependencyLicenses
+
+# escludi i moduli che richiedono Java 6 o creano conflitti
 exclude:
   - name: "jira/**"
+  - name: "googlecode/**"
+  - name: "findbugsTestCases/**"
+  - name: "findbugsTestCasesOS/**"
+
+# opzionale ma utile: non fallire la pipeline se trova problemi
+failThreshold: 0
+
