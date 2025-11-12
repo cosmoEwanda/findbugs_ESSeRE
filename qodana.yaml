@@ -15,7 +15,7 @@ include:
 disableModules:
   - jira
   - googlecode
-  #- jdbcCloudClient
+  - jdbcCloudClient
   - findbugsTestCases
   - findbugsTestCasesOS
 
@@ -26,7 +26,11 @@ exclude:
       - "findbugsTestCases/**"
       - "findbugsTestCasesOS/**"
       - "plugins/**"
-      #- "jdbcCloudClient/**"
+      - "jdbcCloudClient/**"
+
+jdkMappings:
+  J2SE-1.5: 8
+  JavaSE-1.6: 8
       
 
 
