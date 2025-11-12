@@ -18,6 +18,9 @@ include:
 exclude:
   - paths:
       - "plugins/**"
+      - "jira/**"
+      - "jdbcCloudClient/**"
+      - "googlecode/**"
       - "sandbox/**"
       - "server/**"
       - "findbugsTestCases/**"
