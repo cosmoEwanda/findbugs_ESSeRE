@@ -13,17 +13,10 @@ include:
   - name: CheckDependencyLicenses
 
 exclude:
-  - name: "jira"
-    paths:
+  - paths:
       - "jira/**"
-  - name: "googlecode"
-    paths:
       - "googlecode/**"
-  - name: "findbugsTestCases"
-    paths:
       - "findbugsTestCases/**"
-  - name: "findbugsTestCasesOS"
-    paths:
       - "findbugsTestCasesOS/**"
 
 failThreshold: 0
