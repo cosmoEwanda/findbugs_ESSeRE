@@ -19,6 +19,8 @@ exclude:
       - "findbugsTestCases/**"
       - "findbugsTestCasesOS/**"
       - "plugins/**"
+      - "jdbcCloudClient/**"
+      
 
 
 failThreshold: 0
