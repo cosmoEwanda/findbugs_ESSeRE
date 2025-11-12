@@ -14,12 +14,11 @@ include:
 
 exclude:
   - paths:
-      - "jira/**"
-      - "googlecode/**"
-      - "findbugsTestCases/**"
-      - "findbugsTestCasesOS/**"
-      - "*/plugin/**"
-      - "*/plugins/**"
+      #- "jira/**"
+      #- "googlecode/**"
+      #- "findbugsTestCases/**"
+      #- "findbugsTestCasesOS/**"
+      - "plugins/**"
 
 
 failThreshold: 0
