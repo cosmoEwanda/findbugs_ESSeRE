@@ -9,4 +9,4 @@ profile:
 include:
   - name: CheckDependencyLicenses
 exclude:
-  - name: "jira\**"
+  - name: "jira/**"
