@@ -12,6 +12,13 @@ profile:
 include:
   - name: CheckDependencyLicenses
 
+disableModules:
+  - jira
+  - googlecode
+  #- jdbcCloudClient
+  - findbugsTestCases
+  - findbugsTestCasesOS
+
 exclude:
   - paths:
       #- "jira/**"
@@ -19,7 +26,7 @@ exclude:
       - "findbugsTestCases/**"
       - "findbugsTestCasesOS/**"
       - "plugins/**"
-      - "jdbcCloudClient/**"
+      #- "jdbcCloudClient/**"
       
 
 
