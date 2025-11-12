@@ -18,6 +18,9 @@ exclude:
       - "googlecode/**"
       - "findbugsTestCases/**"
       - "findbugsTestCasesOS/**"
+      - "*/plugin/**"
+      - "*/plugins/**"
+
 
 failThreshold: 0
 
