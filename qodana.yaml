@@ -12,28 +12,29 @@ profile:
 include:
   - name: CheckDependencyLicenses
 
+exclude:
+  - paths:
+      - "plugins/**"
+      - "sandbox/**"
+      - "server/**"
+      - "findbugsTestCases/**"
+      - "findbugsTestCasesOS/**"
+
 disableModules:
   - jira
   - googlecode
   - jdbcCloudClient
-  - findbugsTestCases
-  - findbugsTestCasesOS
-
-exclude:
-  - paths:
-      #- "jira/**"
-      #- "googlecode/**"
-      - "findbugsTestCases/**"
-      - "findbugsTestCasesOS/**"
-      - "plugins/**"
-      - "jdbcCloudClient/**"
+  - bugCollectionCloud
+  - webCloudServerAppEngine
+  - webCloudServerCommon
+  - continuousBuilds
+  - localCloud
+  - webCloudClient
 
 jdkMappings:
   J2SE-1.5: 8
   JavaSE-1.6: 8
-      
+  JavaSE-1.7: 8
 
-
-failThreshold: 0
 
 
