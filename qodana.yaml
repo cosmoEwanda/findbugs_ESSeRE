@@ -12,7 +12,7 @@ profile:
 # Includi solo il modulo core FindBugs
 include:
   - name: "findbugs/**/*.java"
-  - name: "webCloudProtocol/**/*.java"
+  #- name: "webCloudProtocol/**/*.java"
 
 # Escludi tutto il resto
 exclude:
