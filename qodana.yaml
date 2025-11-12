@@ -12,19 +12,17 @@ profile:
 # Includi solo il modulo core FindBugs
 include:
   - name: "findbugs/**/*.java"
+  - name: CheckDependencyLicenses 
   #- name: "webCloudProtocol/**/*.java"
 
 # Escludi tutto il resto
 exclude:
   - paths:
-      - "plugins/**"
       - "jira/**"
-      - "jdbcCloudClient/**"
       - "googlecode/**"
-      - "sandbox/**"
-      - "server/**"
       - "findbugsTestCases/**"
-      - "findbugsTestCasesOS/**"
+      - "findbugsTestCasesOS/**""
+      - "jdbcCloudClient/**"
 
 
 
