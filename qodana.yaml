@@ -9,9 +9,12 @@ projectJDK: 8
 profile:
   name: qodana.recommended
 
+# Includi solo il modulo core FindBugs
 include:
-  - name: CheckDependencyLicenses
+  - name: "findbugs/**/*.java"
+  - name: "webCloudProtocol/**/*.java"
 
+# Escludi tutto il resto
 exclude:
   - paths:
       - "plugins/**"
@@ -20,21 +23,6 @@ exclude:
       - "findbugsTestCases/**"
       - "findbugsTestCasesOS/**"
 
-disableModules:
-  - jira
-  - googlecode
-  - jdbcCloudClient
-  - bugCollectionCloud
-  - webCloudServerAppEngine
-  - webCloudServerCommon
-  - continuousBuilds
-  - localCloud
-  - webCloudClient
-
-jdkMappings:
-  J2SE-1.5: 8
-  JavaSE-1.6: 8
-  JavaSE-1.7: 8
 
 
 
