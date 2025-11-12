@@ -16,8 +16,8 @@ exclude:
   - paths:
       #- "jira/**"
       #- "googlecode/**"
-      #- "findbugsTestCases/**"
-      #- "findbugsTestCasesOS/**"
+      - "findbugsTestCases/**"
+      - "findbugsTestCasesOS/**"
       - "plugins/**"
 
 
