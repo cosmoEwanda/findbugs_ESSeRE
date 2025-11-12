@@ -21,7 +21,7 @@ exclude:
       - "jira/**"
       - "googlecode/**"
       - "findbugsTestCases/**"
-      - "findbugsTestCasesOS/**""
+      - "findbugsTestCasesOS/**"
       - "jdbcCloudClient/**"
 failThreshold: 0
 
