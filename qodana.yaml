@@ -4,7 +4,7 @@
 
 version: "1.0"
 linter: jetbrains/qodana-jvm:2025.2
-projectJDK: 8
+projectJDK: 6
 
 profile:
   name: qodana.recommended
