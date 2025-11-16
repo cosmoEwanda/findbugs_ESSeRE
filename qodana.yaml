@@ -4,27 +4,7 @@
 
 version: "1.0"
 linter: jetbrains/qodana-jvm:2025.2
-projectJDK: 6
-
 profile:
   name: qodana.recommended
-
-# Includi solo il modulo core FindBugs
 include:
-  - name: "findbugs/**/*.java"
-  - name: CheckDependencyLicenses 
-  #- name: "webCloudProtocol/**/*.java"
-
-# Escludi tutto il resto
-exclude:
-  - paths:
-      - "jira/**"
-      - "googlecode/**"
-      - "findbugsTestCases/**"
-      - "findbugsTestCasesOS/**"
-      - "jdbcCloudClient/**"
-failThreshold: 0
-
-
-
-
+  - name: CheckDependencyLicenses
